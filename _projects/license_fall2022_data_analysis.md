@@ -1,7 +1,7 @@
 ---
-name: Ego-Facebook Data Analysis
+name: License Fall2022 Data Analysis
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/cars.png
+image: assets/pngs/license.png
 description: This is a homework project!
 custom_js:
   - vega.min
@@ -29,8 +29,11 @@ Before visualization, the data was transformed using Python by grouping the orig
 
 ## Disciplinary Analysis(interactive)
 
+<div class="alert alert-info" role="alert">
+  <i class="fas fa-info-circle"></i> <strong>Note:</strong> Please click the bar in the left chart!
+</div>
 
-`Please click the bar in the left chart!`
+
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/discipline.json" style="width: 100%"></vegachart>
 
