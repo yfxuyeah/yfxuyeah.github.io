@@ -22,22 +22,23 @@ This bar chart visualizes the "Top 10 Cities by Number of License Holders in Fal
 
 Key design choices include using mark_bar() for easy comparison, sorting the x-axis by the y-value ('counts') in descending order, and setting x-axis labels horizontally (labelAngle=0) for readability. A logarithmic scale (type='log') was applied to the y-axis where the top city's count is orders of magnitude larger than the others. A tooltip was also added for interactivity. 
 
+ColorMap was unnecessary because it simply compares the number of license holder in a bar chart.
+
 Before visualization, the data was transformed using Python by grouping the original dataset by 'City', aggregating the size of each group into a 'counts' column, sorting this new DataFrame by 'counts' in descending order, and finally, slicing the DataFrame to retain only the top 10 rows.
 
 
-## Search The Data & Methods
+## Disciplinary Analysis(interactive)
 
-Below is where we can put some links to both the data and the analysis code as buttons:
 
-```
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
+`Please click the bar in the left chart!`
 
-<div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
-```
+<vegachart schema-url="{{ site.baseurl }}/assets/json/discipline.json" style="width: 100%"></vegachart>
+
+This visualization provides an interactive dashboard for exploring professional license disciplinary actions, featuring two linked bar charts. The left chart presents an overview of violation counts by 'License Type', while the right chart details the specific 'Top 5 Discipline Reason'.
+
+The design encodes 'License Type' and 'Discipline Reason' as nominal data on the x-axes, with record counts as quantitative data on the y-axes. A colormap was unnecessary; instead, the chart uses conditional fillOpacity to encode the selection status, causing unselected bars to fade. A key data transformation is the symlog scale on the left chart's y-axis, which properly visualizes the large variance in counts across different professions.
+
+Interactivity is central to this visual. A selection_point on the left chart drives the analysis. When a user clicks a 'License Type', this selection highlights the chosen bar and, most importantly, applies a transform_filter to the right chart. This action instantly filters the detail view to show only the reasons relevant to the selected profession.
 
 <!-- these are written in a combo of html and liquid --> 
 
@@ -46,10 +47,7 @@ Below is where we can put some links to both the data and the analysis code as b
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/yfxuyeah/yfxuyeah.github.io/blob/main/python_notebooks/licenses_fall2022_analysis.ipynb" text="The Analysis" %}
 </div>
 
-# Ego-Facebook Data Analysis
-
-We conduct a general analysis on ego-facebook dataset. 
 
