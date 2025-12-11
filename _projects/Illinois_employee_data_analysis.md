@@ -12,7 +12,7 @@ custom_js:
 
 
 # State of Pay: Unveiling Illinois Public Employee Compensation
-
+## Group Members: Saralexis Torres, Yi Wu, Yifan Xu, Jennifer Ruiz 
 ## Dataset Overview
 
 Visualizations are based on the state employee dataset from Illinois that contains employees who have been sworn in as law enforcement officers. The dataset includes columns such as agency, agency division, employee name, position title, period pay rate, and year-to-date (YTD) gross pay. According to Cornell University, state employees refer to individuals who are employed by the state and the services that they provide which are being financed by the United States/Federal agency. Period pay rate refers to the amount an employee is paid based on a specific time frame, for example, bi-weekly or monthly. While year to date is the amount of money the employee has gotten paid starting from January 1 to the most recent time the dataset has been updated. Each row then is an individual employee who works as a state employee in Illinois. In this dataset, there are 6 columns which were previously mentioned, and there are 104,000 rows. Overall, our dataset is tracking how much state employees are paid across their agency while still having a specific position title.
