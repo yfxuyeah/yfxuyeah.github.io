@@ -58,9 +58,9 @@ Desilver, D. (2025, January 7). What the data says about federal workers. Retrie
 DoIT EAS. (2024, September 24). State Employee Pay. Retrieved December 10, 2025, from Illinois.gov website: [https://data.illinois.gov/Government-and-Public-Employees/State-Employee-Pay/iu6r-a89d/about_data](https://data.illinois.gov/Government-and-Public-Employees/State-Employee-Pay/iu6r-a89d/about_data)
 
 <div class="left">
-{% include elements/button.html link="https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/licenses_fall2022.csv" text="The Data" %}
+{% include elements/button.html link="https://github.com/yfxuyeah/yfxuyeah.github.io/blob/main/python_notebooks/State_Employee_Pay_20251110.csv" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://github.com/yfxuyeah/yfxuyeah.github.io/blob/main/python_notebooks/licenses_fall2022_analysis.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/yfxuyeah/yfxuyeah.github.io/blob/main/python_notebooks/Workbook.ipynb" text="The Analysis" %}
 </div>
